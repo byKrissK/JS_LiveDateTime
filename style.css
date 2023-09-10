@@ -4,6 +4,32 @@
 }
 
 body {
+    color:#eee;
+    background-color: #0a0a0a ;
     font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight:300;
+    line-height: 1.7;
+
+    height:100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+h1,
+.subhead{
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 3em;
+    font-weight:500;
+}
+
+.subhead{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
