@@ -1,9 +1,21 @@
 // Variables are used to store data.
-let message = "Hello, World!";
-let number = 42;
-const pi = 3.14; // 'const' creates a constant (unchangeable) variable.
+let message = "Practice Basic Javascript!";
+// let currentDate = new Date();
+// let formattedDate = `${currentDate.getDate()}-${currentDate.getMonth() + 1}-${currentDate.getFullYear()}`;
 
-// Access the HTML elements by their IDs and update their content
+let updateTime = () => {
+    let currentDate = new Date();
+    let formattedDate = `${currentDate.getDate()}-${currentDate.getMonth() + 1}-${currentDate.getFullYear()}`;
+    let currentTime = `${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`;
+    document.getElementById("time").textContent = `${formattedDate} ${currentTime}`;
+}
+
+//Update the time every second (1000 milliseconds).
+setInterval(updateTime, 1000);
+
+// Initialize the time immediately.
+updateTime();
+
+// Access the HTML elements by their IDs and update their content.
 document.getElementById("message").textContent += ` ${message}`;
-document.getElementById("number").textContent += ` ${number}`;
-document.getElementById("pi").textContent += ` ${pi}`;
+// document.getElementById("number").textContent += ` ${formattedDate}`;
